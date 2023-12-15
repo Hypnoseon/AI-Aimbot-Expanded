@@ -124,6 +124,11 @@ def main():
                             mouse_move_cmd = "{},{}\n".format(int(mouseMove[0] * aaMovementAmp), int(mouseMove[1] * aaMovementAmp))
                             ser.write(mouse_move_cmd.encode('utf-8'))
                             last_mid_coord = [xMid, yMid]
+                        else:
+                            # Moving the mouse without Arduino
+                            win32api.mouse_event(win32con.MOUSEEVENTF_MOVE, int(
+                                mouseMove[0] * aaMovementAmp), int(mouseMove[1] * aaMovementAmp), 0, 0)
+                            last_mid_coord = [xMid, yMid]
 
 
             else:
