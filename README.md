@@ -1,6 +1,6 @@
 **NEW UI** Easier to configurate and run!
 
-**CURRENTLY ONLY MAIN_TENSORRT.PY WORKS**, For Arduino Leonardo No need for USB Host Shield, you can spoof arduino leonardo and it should be just fine.
+**CURRENTLY ONLY MAIN_TENSORRT.PY WORKS**, For Arduino Leonardo No need for USB Host Shield, you can spoof arduino leonardo and it should be just fine. Use USB Host shield, spoof if you want minimal detection.
 
 ### Features
 
